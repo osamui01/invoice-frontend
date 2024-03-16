@@ -1,16 +1,12 @@
+// import Sidebar from "@/components/global/sidebar";
+import Sidebar from "@/components/global/sidebar";
 import { Outlet, createRootRoute } from "@tanstack/react-router";
-import { Link } from "@tanstack/react-router";
 
 export const Route = createRootRoute({
   component: () => (
     <>
-      <h1>Invoice App Dashboard</h1>
-
-      <ul>
-        <li>
-          <Link to="/invoices">Invoices</Link>
-        </li>
-      </ul>
+      {/* <h1>Invoice App Dashboard</h1> */}
+      <Sidebar />
       <Outlet />
     </>
   ),
